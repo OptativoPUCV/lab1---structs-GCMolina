@@ -75,7 +75,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]
         result[j]=arr2[x];
         x=x+1;
       }
-      }
+    }
   }
   int aux=0;
   for (int i=0;i<size3;i++){
@@ -83,24 +83,21 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]
       if (result[i]<result[j]){
         aux=result[i];
         result[i]=result[j];
-        result[j]=aux;
-        
+        result[j]=aux;  
       }
-    }
-    
-    
+    } 
   }
-  
 }
-
 /*
 Ejercicio 5: Comprobación de Ordenación
 Descripción: Escribe una función que tome un arreglo y su tamaño,
 y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
-int checkSorted(int arr[], int size) { return -2; }
-
+int checkSorted(int arr[], int size) { 
+  
+  
+  return 1; }
 /*
 Ejercicio 6: Información de una Biblioteca
 Descripción: Vamos a representar la información de una biblioteca. En la
