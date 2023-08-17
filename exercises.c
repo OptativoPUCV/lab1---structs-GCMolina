@@ -46,6 +46,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
     if (arr[i]%2==0){
       *newSize=*newSize+1;
     }
+  }
   int *puntero=(int *)malloc(*newSize*sizeof(int));
   int j = 0 ;
   for (int i=0; i<size;i++){
@@ -53,7 +54,9 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
       puntero[j]=arr[i];
     }
     j++;
+  }
 return puntero; }
+
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
