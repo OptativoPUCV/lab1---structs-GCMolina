@@ -113,3 +113,9 @@ exercises.c:69:7: error: unused variable ‘size3’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 2d815ec
+Thu 17 Aug 2023 08:18:30 PM UTC: 
+ exercises.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+ tests:  0|3
+total_score: 40/70
+9bf8240
