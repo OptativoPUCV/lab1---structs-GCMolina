@@ -41,7 +41,11 @@ Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) { 
+int *filterEvenNumbers(int arr[], int size, int *newSize) {
+  for (int i=0; i<size;i++){
+    if (arr[i]%2==0){
+      *newSize=*newSize+1;
+    }
   int *puntero=(int *)malloc(*newSize*sizeof(int));
   int j = 0 ;
   for (int i=0; i<size;i++){
