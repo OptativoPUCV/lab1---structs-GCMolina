@@ -53,8 +53,8 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
   for (int i=0; i<size;i++){
     if (arr[i]%2==0){
       puntero[j]=arr[i];
+      j++;
     }
-    j++;
   }
 return puntero; }
 
@@ -65,7 +65,9 @@ Descripción: Escribe una función que tome dos arreglos
 ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
-void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {}
+void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {
+  
+}
 
 /*
 Ejercicio 5: Comprobación de Ordenación
@@ -94,8 +96,13 @@ typedef struct {
   int anioPublicacion;
 } Libro;
 
-void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
-                      int anioNacimiento, int anioPublicacion) {}
+
+void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,int anioNacimiento, int anioPublicacion) {
+  strncpy(libro->titulo,titulo,sizeof(libro->titulo)-1);
+  strncpy(libro->autor.nombre,nombreAutor,sizeof(libro->autor.nombre)-1);
+  libro->autor.anioNacimiento=anioNacimiento;
+  libro->anioPublicacion=anioPublicacion;
+}
 
 /*
 Ejercicio 7: Lista enlazada de números
