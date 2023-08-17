@@ -177,3 +177,30 @@ exercises.c:78:7: error: unused variable ‘aux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 111199f
+Thu 17 Aug 2023 08:29:25 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:79:3: error: expected ‘,’ or ‘;’ before ‘for’
+   79 |   for (int i=0;i<size3;i++){
+      |   ^~~
+exercises.c:79:16: error: ‘i’ undeclared (first use in this function)
+   79 |   for (int i=0;i<size3;i++){
+      |                ^
+exercises.c:79:16: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:79:27: error: expected ‘;’ before ‘)’ token
+   79 |   for (int i=0;i<size3;i++){
+      |                           ^
+      |                           ;
+exercises.c:79:27: error: expected statement before ‘)’ token
+exercises.c:81:10: error: expected ‘(’ before ‘result’
+   81 |       if result[i]>result[j]{
+      |          ^~~~~~
+      |          (
+exercises.c:78:7: error: unused variable ‘aux’ [-Werror=unused-variable]
+   78 |   int aux=0
+      |       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+d854bf4
