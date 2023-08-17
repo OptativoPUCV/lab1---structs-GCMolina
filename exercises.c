@@ -73,7 +73,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]
       if (i==size1-1){
       for (int j=size1;j<size3;j++){
         result[j]=arr2[x];
-        x=x+1
+        x=x+1;
       }
       }
   }
