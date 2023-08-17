@@ -204,3 +204,21 @@ exercises.c:78:7: error: unused variable ‘aux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 d854bf4
+Thu 17 Aug 2023 08:29:50 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:81:10: error: expected ‘(’ before ‘result’
+   81 |       if result[i]>result[j]{
+      |          ^~~~~~
+      |          (
+exercises.c:81:16: error: statement with no effect [-Werror=unused-value]
+   81 |       if result[i]>result[j]{
+      |          ~~~~~~^~~
+exercises.c:78:7: error: unused variable ‘aux’ [-Werror=unused-variable]
+   78 |   int aux=0;
+      |       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+d5fcb09
