@@ -222,3 +222,15 @@ exercises.c:78:7: error: unused variable ‘aux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 d5fcb09
+Thu 17 Aug 2023 08:30:06 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:83:19: error: ‘resultado’ undeclared (first use in this function); did you mean ‘result’?
+   83 |         result[i]=resultado[j];
+      |                   ^~~~~~~~~
+      |                   result
+exercises.c:83:19: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+4c2607e
