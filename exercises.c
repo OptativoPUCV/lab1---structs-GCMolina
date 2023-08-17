@@ -100,10 +100,10 @@ int checkSorted(int arr[], int size) {
   bool descente = true;  
   for (int i=0; i<size-1; i++){
     if(arr[i]<arr[i+1]){
-      descente=false;
+      ascendente=false;
     }
     if(arr[i]>arr[i+1]){
-      ascendente=false;
+      descente=false;
     }
     if (ascendente){
       return 1;
