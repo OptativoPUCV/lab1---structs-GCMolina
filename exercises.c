@@ -97,9 +97,7 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 #include <stdbool.h>
 int checkSorted(int arr[], int size) { 
   bool ascendente = true; 
-  bool descente = true;
-  bool neutro= true;
-  
+  bool descente = true;  
   for (int i=0; i<size-1; i++){
     if(arr[i]<arr[i+1]){
       descente=false;
@@ -114,9 +112,7 @@ int checkSorted(int arr[], int size) {
       return -1;
     }
   }
-  if (neutro){
-    return 0;
-  }
+  return 0;
 }
 /*
 Ejercicio 6: Información de una Biblioteca
