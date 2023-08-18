@@ -402,3 +402,33 @@ exercises.c:178:3: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 9e322ff
+Fri 18 Aug 2023 02:08:16 AM UTC: 
+ exercises.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:172:7: error: expected ‘}’ before ‘else’
+  172 |       else{
+      |       ^~~~
+exercises.c:173:26: error: ‘Nuevo’ undeclared (first use in this function); did you mean ‘nuevo’?
+  173 |       Final->siguiente = Nuevo;
+      |                          ^~~~~
+      |                          nuevo
+exercises.c:173:26: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:161:9: error: variable ‘Inicio’ set but not used [-Werror=unused-but-set-variable]
+  161 |   Nodo *Inicio=NULL;
+      |         ^~~~~~
+exercises.c: At top level:
+exercises.c:179:3: error: expected identifier or ‘(’ before ‘return’
+  179 |   return Inicio; }
+      |   ^~~~~~
+exercises.c:179:18: error: expected identifier or ‘(’ before ‘}’ token
+  179 |   return Inicio; }
+      |                  ^
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:178:3: error: control reaches end of non-void function [-Werror=return-type]
+  178 |   }
+      |   ^
+cc1: all warnings being treated as errors
+Compilation failed
+6195b18
