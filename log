@@ -377,3 +377,28 @@ Fri 18 Aug 2023 12:49:08 AM UTC:
  tests:  0|1
 total_score: 60/70
 b13b116
+Fri 18 Aug 2023 02:07:22 AM UTC: 
+ exercises.c | 20 +++++++++++++++++++-
+ 1 file changed, 19 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:172:7: error: expected ‘}’ before ‘else’
+  172 |       else{
+      |       ^~~~
+exercises.c:161:9: error: variable ‘Inicio’ set but not used [-Werror=unused-but-set-variable]
+  161 |   Nodo *Inicio=NULL;
+      |         ^~~~~~
+exercises.c: At top level:
+exercises.c:179:3: error: expected identifier or ‘(’ before ‘return’
+  179 |   return Inicio; }
+      |   ^~~~~~
+exercises.c:179:18: error: expected identifier or ‘(’ before ‘}’ token
+  179 |   return Inicio; }
+      |                  ^
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:178:3: error: control reaches end of non-void function [-Werror=return-type]
+  178 |   }
+      |   ^
+cc1: all warnings being treated as errors
+Compilation failed
+9e322ff
